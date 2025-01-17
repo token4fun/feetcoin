@@ -179,6 +179,10 @@ body {
     margin-bottom: 20px;
 }
 
+.interactive-banner .image-banner {
+    margin: 20px auto;
+}
+
 .interactive-banner img {
     max-width: 80%;
     height: auto;
@@ -190,6 +194,26 @@ body {
 .interactive-banner img:hover {
     transform: scale(1.05);
 }
+
+.interactive-banner p {
+    font-size: 18px;
+    color: #444;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.interactive-banner p span {
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.interactive-banner p span.holder-info {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
 
 .meme-gallery {
     text-align: center;
