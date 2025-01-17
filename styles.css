@@ -1,6 +1,6 @@
 body {
     position: relative;
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('bg-feetcoin.jpg');
@@ -9,159 +9,136 @@ body {
     background-attachment: fixed;
     background-position: center;
     color: #222;
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    z-index: -1;
+    overflow-x: hidden;
 }
 
 .hero-banner {
     text-align: center;
-    padding: 50px 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 60px 20px;
+    background: linear-gradient(45deg, #f9f9f9, #e6f7ff);
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    animation: bounce-in 1.5s ease;
 }
 
 .hero-banner h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 42px;
+    color: #ff6b6b;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-banner p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 30px;
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 35px;
+    line-height: 1.6;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 18px 35px;
+    font-size: 20px;
     background: linear-gradient(45deg, #ff6b6b, #ffa06b);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 .cta-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(45deg, #ff9999, #ffc999);
 }
 
-.features {
+.cta-button .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    margin: 20px auto;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    max-width: 800px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+    z-index: 10;
 }
 
-.features h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
+.cta-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
-.features ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-.features ul li {
-    margin: 10px 0;
-    font-size: 16px;
-    color: #555;
+.social-icons {
     display: flex;
-    align-items: center;
-}
-
-.features ul li::before {
-    content: '\2022';
-    color: #ff6b6b;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.image-banner {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    max-width: 800px;
-}
-
-.image-banner img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.image-banner img:hover {
-    transform: scale(1.05);
-}
-
-.meme-carousel {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
     margin-top: 20px;
-    padding: 10px;
-    scroll-snap-type: x mandatory;
+    position: relative;
 }
 
-.meme-carousel img {
-    max-height: 300px;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+.social-icon {
+    position: relative;
+    display: inline-block;
 }
 
-.meme-carousel img:hover {
-    transform: scale(1.1);
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-footer {
+.social-icon img:hover {
+    transform: rotate(15deg) scale(1.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.social-icon .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
-    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+    z-index: 10;
 }
 
-footer a {
-    color: #ff6b6b;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.social-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
-footer a:hover {
-    color: #ffa06b;
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
-<div class="hero-banner">
-    <h1>Feet
