@@ -393,3 +393,23 @@ body {
 .footer-content a:hover {
     color: #ffa06b;
 }
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.tooltip-link {
+    position: relative;
+    text-decoration: none;
+    color: #ff6b6b;
+    font-weight: bold;
+}
