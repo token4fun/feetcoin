@@ -276,6 +276,50 @@ footer a:hover {
     }
 }
 
+.cta-button {
+    display: inline-block;
+    padding: 18px 35px;
+    font-size: 20px;
+    background: linear-gradient(45deg, #ff6b6b, #ffa06b);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.cta-button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(45deg, #ff9999, #ffc999);
+}
+
+.cta-button .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.cta-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
 .social-icons {
     display: flex;
     justify-content: center;
