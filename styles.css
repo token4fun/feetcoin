@@ -15,7 +15,7 @@ body {
 .hero-banner {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(45deg, rgba(249, 249, 249, 0.8), rgba(230, 247, 255, 0.8));
+    background: linear-gradient(45deg, rgba(249, 249, 249, 0.9), rgba(230, 247, 255, 0.9));
     border-radius: 15px;
     margin: 30px auto;
     max-width: 900px;
@@ -41,7 +41,7 @@ body {
     display: inline-block;
     padding: 18px 35px;
     font-size: 20px;
-    background: linear-gradient(45deg, #ff6b6b, #ffa06b);
+    background: linear-gradient(45deg, rgba(255, 107, 107, 0.9), rgba(255, 160, 107, 0.9));
     color: white;
     border: none;
     border-radius: 8px;
@@ -55,7 +55,7 @@ body {
 .cta-button:hover {
     transform: scale(1.15);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-    background: linear-gradient(45deg, #ff9999, #ffc999);
+    background: linear-gradient(45deg, rgba(255, 153, 153, 0.9), rgba(255, 201, 153, 0.9));
 }
 
 .cta-button .tooltip {
@@ -151,7 +151,7 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
-    background: linear-gradient(45deg, #ff6b6b, #ffa06b);
+    background: linear-gradient(45deg, rgba(255, 107, 107, 0.9), rgba(255, 160, 107, 0.9));
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -167,7 +167,7 @@ body {
     text-align: center;
     padding: 30px;
     margin: 30px auto;
-    background: linear-gradient(45deg, #f2f7ff, #e6e9ff);
+    background: linear-gradient(45deg, rgba(242, 247, 255, 0.9), rgba(230, 233, 255, 0.9));
     border-radius: 15px;
     max-width: 900px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
@@ -322,7 +322,7 @@ body {
     text-align: center;
     padding: 40px;
     margin: 30px auto;
-    background: linear-gradient(45deg, #fff5e6, #ffe6cc);
+    background: linear-gradient(45deg, rgba(255, 245, 230, 0.9), rgba(255, 230, 204, 0.9));
     border-radius: 15px;
     max-width: 900px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
