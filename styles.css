@@ -293,3 +293,29 @@ body {
         opacity: 1;
     }
 }
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #333, #555);
+    color: white;
+    margin-top: 30px;
+    border-top: 4px solid #ff6b6b;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.footer-content a {
+    color: #ff9999;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ffa06b;
+}
