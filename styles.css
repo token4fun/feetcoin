@@ -81,6 +81,115 @@ body {
     opacity: 1;
 }
 
+.bond-warning {
+    text-align: center;
+    padding: 25px;
+    margin: 30px auto;
+    background: rgba(255, 230, 230, 0.9);
+    border-left: 5px solid #ff6b6b;
+    border-radius: 10px;
+    max-width: 850px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.bond-warning h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #d9534f;
+}
+
+.bond-warning p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.bond-warning a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #ff6b6b, #ffa06b);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bond-warning a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.interactive-banner {
+    text-align: center;
+    padding: 30px;
+    margin: 30px auto;
+    background: linear-gradient(45deg, #f2f7ff, #e6e9ff);
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.interactive-banner h2 {
+    font-size: 30px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.interactive-banner img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.interactive-banner img:hover {
+    transform: scale(1.05);
+}
+
+.meme-gallery {
+    text-align: center;
+    padding: 40px;
+    margin: 30px auto;
+    background: rgba(240, 255, 240, 0.9);
+    border: 2px dashed #88cc88;
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.meme-gallery h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #66bb66;
+}
+
+.meme-gallery p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.meme-gallery .meme-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+}
+
+.meme-gallery .meme-carousel img {
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.meme-gallery .meme-carousel img:hover {
+    transform: scale(1.1);
+}
+
 .social-icons {
     display: flex;
     justify-content: center;
