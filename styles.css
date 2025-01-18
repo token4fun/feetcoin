@@ -1,4 +1,6 @@
 body {
+    font-size: 18px; /* Tamanho base aumentado */
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -24,14 +26,16 @@ body {
 }
 
 .hero-banner h1 {
-    font-size: 42px;
+    font-size: 48px; /* Aumentado para um título mais chamativo */
+   /* font-size: 42px; */
     color: #ff6b6b;
     margin-bottom: 25px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-banner p {
-    font-size: 20px;
+    font-size: 22px; /* Aumentado para melhor legibilidade */
+    /*font-size: 20px;*/
     color: #444;
     margin-bottom: 35px;
     line-height: 1.6;
@@ -97,7 +101,8 @@ ul {
 }
 
 .features h2 {
-    font-size: 32px;
+    font-size: 36px; /* Título mais destacado */
+    /*font-size: 32px;*/
     margin-bottom: 15px;
     color: #444;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -113,7 +118,8 @@ ul {
 
 .features ul li {
     margin: 15px 0;
-    font-size: 18px;
+    font-size: 20px; /* Melhor leitura nos itens */
+    /*font-size: 18px;*/
     color: #555;
     display: flex;
     align-items: center;
@@ -334,7 +340,8 @@ ul {
 }
 
 .roadmap h2 {
-    font-size: 36px;
+    font-size: 38px; /* Título maior */
+    /* font-size: 36px; */
     margin-bottom: 30px;
     color: #ff6b6b;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -361,13 +368,15 @@ ul {
 }
 
 .roadmap-item h3 {
-    font-size: 24px;
+    font-size: 26px; /* Subtítulos maiores */
+    /* font-size: 24px; */
     color: #444;
     margin-bottom: 10px;
 }
 
 .roadmap-item p {
-    font-size: 16px;
+    font-size: 18px; /* Texto ajustado */
+    /* font-size: 16px; */
     color: #555;
     line-height: 1.6;
 }
@@ -417,4 +426,20 @@ ul {
     text-decoration: none;
     color: #ff6b6b;
     font-weight: bold;
+}
+/* Isso foi inserido agora */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Reduzido para caber melhor em telas pequenas */
+    }
+
+    .hero-banner h1 {
+        font-size: 36px;
+    }
+
+    .hero-banner p,
+    .features ul li,
+    .roadmap-item p {
+        font-size: 18px;
+    }
 }
