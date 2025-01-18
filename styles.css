@@ -469,6 +469,34 @@ ul {
     line-height: 1.6;
 }
 
+.follow-twitter {
+    text-align: center;
+    padding: 40px;
+    margin: 30px auto;
+    background: linear-gradient(45deg, rgba(255, 255, 240, 0.9), rgba(255, 240, 240, 0.9));
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.follow-twitter h2 {
+    font-size: 32px;
+    color: #444;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.follow-twitter p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.twitter-follow {
+    margin-top: 20px;
+}
+
 .twitter-feed {
     margin-top: 20px;
 }
