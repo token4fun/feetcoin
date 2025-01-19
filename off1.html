@@ -107,20 +107,31 @@
             margin-top: 20px;
         }
 
-        .social-buttons a {
-            display: block;
-            padding: 10px;
-            text-align: center;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-align: left;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
 
-        .social-buttons a:hover {
-            background: #0056b3;
-        }
+.social-buttons a img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.social-buttons a:hover {
+    background: #0056b3;
+}
+
 
         .download-buttons {
             display: flex;
@@ -203,20 +214,26 @@
             </div>
         </div>
 
-        <div class="login-section">
-            <h2>Login</h2>
-            <form>
-                <input type="email" placeholder="E-mail" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Login</button>
-            </form>
-            <div class="social-buttons">
-                <a href="#">Login with X</a>
-                <a href="#">Login with Google</a>
-                <a href="#">Passwordless Login</a>
-            </div>
-        </div>
+<div class="login-section">
+    <h2>Login</h2>
+    <form>
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <div class="social-buttons">
+        <a href="#">
+            <img src="x.png" alt="X Logo"> Login with X
+        </a>
+        <a href="#">
+            <img src="google.png" alt="Google Logo"> Login with Google
+        </a>
+        <a href="#">
+            <img src="finger.png" alt="Fingerprint Logo"> Passwordless Login
+        </a>
     </div>
+</div>
+
 
     <div class="sections">
         <div class="section">
