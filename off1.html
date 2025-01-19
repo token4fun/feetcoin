@@ -28,7 +28,7 @@
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
 
         header p {
@@ -100,24 +100,25 @@
             gap: 10px;
         }
 
-        .login-section input {
-            width: 95%; /* Ajuste para margem interna */
+        .login-section input,
+        .login-section button {
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto;
             padding: 10px;
-            border: 1px solid #ddd;
             border-radius: 5px;
-            margin: 0 auto; /* Centraliza */
+            font-size: 1rem;
+        }
+
+        .login-section input {
+            border: 1px solid #ddd;
         }
 
         .login-section button {
-            width: 95%; /* Ajuste para margem interna */
-            padding: 10px;
             background: #007bff;
             color: white;
             border: none;
-            border-radius: 5px;
-            font-size: 1rem;
             cursor: pointer;
-            margin: 0 auto; /* Centraliza */
         }
 
         .login-section button:hover {
@@ -128,8 +129,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            padding: 10px;
-            margin: 10px auto; /* Ajuste para espaçamento entre botões */
+            margin: 10px auto; /* Adjust spacing between buttons */
             background: #007bff;
             color: white;
             text-decoration: none;
@@ -137,7 +137,9 @@
             transition: background 0.3s ease;
             font-size: 1rem;
             font-weight: bold;
-            width: 95%; /* Ajusta largura com margens */
+            width: 90%;
+            max-width: 400px;
+            padding: 10px;
         }
 
         .social-buttons a img {
@@ -179,16 +181,87 @@
             padding: 20px;
             background: rgba(0, 123, 255, 0.8); /* Azul no rodapé */
             color: white;
+            position: relative;
         }
 
-        @media (max-width: 768px) {
+        footer p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ffecb3;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+
+        footer a:hover {
+            color: #ffe066;
+        }
+
+        /* Tooltip image for hovering */
+        footer a:hover::after {
+            content: '';
+            position: absolute;
+            top: -150%; /* Adjust vertical positioning */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background: url('mvpico.png') no-repeat center center;
+            background-size: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        @media (max-width: 1024px) {
             .main-container {
                 flex-direction: column;
             }
 
-            .image-section, .login-section {
-                flex: unset;
+            .image-section,
+            .login-section {
                 width: 100%;
+                margin: 10px 0;
+            }
+
+            .download-buttons img {
+                height: 40px; /* Smaller buttons for tablets and phones */
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .login-section input,
+            .login-section button {
+                width: 100%;
+            }
+
+            .social-buttons a {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .download-buttons img {
+                height: 35px; /* Smaller buttons for small phones */
             }
         }
     </style>
@@ -243,7 +316,7 @@
 
     <footer>
         <p>&copy; 2025 OFF App | Powered by $FEET Coin</p>
-        <p>By: <a href="https://t.me/Marcelo_VP" target="_blank">@Marcelo_VP</a> </a></p>
+        <p>By: <a href="https://t.me/Marcelo_VP" target="_blank">@Marcelo_VP</a></p>
     </footer>
 </body>
 </html>
