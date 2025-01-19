@@ -500,3 +500,20 @@ ul {
 .twitter-feed {
     margin-top: 20px;
 }
+
+
+        /* Tooltip image for hovering */
+        footer a:hover::after {
+            content: '';
+            position: absolute;
+            top: -150%; /* Adjust vertical positioning */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background: url('mvpico.png') no-repeat center center;
+            background-size: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
