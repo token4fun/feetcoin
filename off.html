@@ -153,29 +153,34 @@
             background: #0056b3;
         }
 
-        .sections {
-            margin: 40px auto;
-            max-width: 1200px;
-            padding: 20px;
-        }
+.sections {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
 
-        .section {
-            background: rgba(255, 255, 255, 0.4); /* Translucent background */
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.section {
+    background: rgba(255, 255, 255, 0.4); /* Translucent background */
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1rem; /* Default font size */
+    line-height: 1.6; /* Improved line spacing */
+}
 
-        .section:hover {
-            transform: scale(1.02);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
+.section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
 
-        .section h2 {
-            color: #007bff;
-        }
+.section h2 {
+    color: #007bff;
+    font-size: 1.8rem; /* Larger font size for headers */
+    text-align: center;
+    margin-bottom: 15px;
+}
 
         footer {
             text-align: center;
@@ -265,6 +270,40 @@
                 height: 35px; /* Smaller buttons for small phones */
             }
         }
+
+/* Responsive typography adjustments */
+@media (max-width: 1024px) {
+    .section {
+        font-size: 1rem;  /* Slightly smaller font for tablets */
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        font-size: 0.95rem; /* Adjust font for smaller screens */
+    }
+
+    .section h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        font-size: 0.9rem; /* Smaller font for mobile */
+        padding: 20px;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+}
+
+        
     </style>
 </head>
 <body>
