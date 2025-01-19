@@ -18,20 +18,9 @@
             background-size: cover;
         }
 
-        /* Overlay to make background translucent */
-        .background-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency here */
-            z-index: -1; /* Make sure content is above this */
-        }
-
         header {
             text-align: center;
-            background: #007bff;
+            background: rgba(0, 123, 255, 0.8); /* Translucent background */
             color: white;
             padding: 20px 0;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -55,7 +44,7 @@
             padding: 20px;
             margin: 20px auto;
             max-width: 1200px;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.4); /* Translucent background */
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
@@ -72,9 +61,28 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .download-buttons img {
+            width: auto;
+            height: 50px; /* Standard height for buttons */
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .download-buttons img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
         .login-section {
             flex: 1;
-            background: #f9f9f9;
+            background: rgba(255, 255, 255, 0.4); /* Translucent background */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -93,13 +101,15 @@
         }
 
         .login-section input {
-            width: 100%;
+            width: 95%; /* Ajuste para margem interna */
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            margin: 0 auto; /* Centraliza */
         }
 
         .login-section button {
+            width: 95%; /* Ajuste para margem interna */
             padding: 10px;
             background: #007bff;
             color: white;
@@ -107,6 +117,7 @@
             border-radius: 5px;
             font-size: 1rem;
             cursor: pointer;
+            margin: 0 auto; /* Centraliza */
         }
 
         .login-section button:hover {
@@ -118,7 +129,7 @@
             align-items: center;
             gap: 10px;
             padding: 10px;
-            text-align: left;
+            margin: 10px auto; /* Ajuste para espaçamento entre botões */
             background: #007bff;
             color: white;
             text-decoration: none;
@@ -126,6 +137,7 @@
             transition: background 0.3s ease;
             font-size: 1rem;
             font-weight: bold;
+            width: 95%; /* Ajusta largura com margens */
         }
 
         .social-buttons a img {
@@ -138,29 +150,6 @@
             background: #0056b3;
         }
 
-        .download-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .download-buttons a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .download-buttons a:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-        }
-
         .sections {
             margin: 40px auto;
             max-width: 1200px;
@@ -168,7 +157,7 @@
         }
 
         .section {
-            background: white;
+            background: rgba(255, 255, 255, 0.4); /* Translucent background */
             margin: 20px 0;
             padding: 20px;
             border-radius: 10px;
@@ -188,7 +177,7 @@
         footer {
             text-align: center;
             padding: 20px;
-            background: #333;
+            background: rgba(0, 123, 255, 0.8); /* Azul no rodapé */
             color: white;
         }
 
@@ -205,9 +194,8 @@
     </style>
 </head>
 <body>
-    <div class="background-overlay"></div>
     <header>
-        <h1>$FEET Fans</h1>
+        <h1>Only $Feet Fans</h1>
         <p>Subscribe to support your favorite creators</p>
     </header>
 
@@ -215,8 +203,8 @@
         <div class="image-section">
             <img src="off.png" alt="OFF App Promotion">
             <div class="download-buttons">
-                <a href="#">Download on App Store</a>
-                <a href="#">Get it on Google Play</a>
+                <a href="#"><img src="applestore.png" alt="Download on App Store"></a>
+                <a href="#"><img src="googleplay.png" alt="Get it on Google Play"></a>
             </div>
         </div>
 
@@ -229,7 +217,7 @@
             </form>
             <div class="social-buttons">
                 <a href="#">
-                    <img src="x.png" alt="X Logo"> Login with X
+                    <img src="xx.png" alt="X Logo"> Login with X
                 </a>
                 <a href="#">
                     <img src="google.png" alt="Google Logo"> Login with Google
@@ -255,6 +243,7 @@
 
     <footer>
         <p>&copy; 2025 OFF App | Powered by $FEET Coin</p>
+        <p>By: <a href="https://t.me/Marcelo_VP" target="_blank">@Marcelo_VP</a> </a></p>
     </footer>
 </body>
 </html>
