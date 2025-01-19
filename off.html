@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OFF App - Only Feet Fans: The ultimate platform for exclusive feet-themed content powered by $FEET Coin.">
+    <meta name="keywords" content="OFF App, FeetCoin, $FEET, NFTs, Feet Fans, Exclusive Content">
+    <meta name="author" content="OFF Development Team">
+    <title>OFF App - Only Feet Fans</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(45deg, #ffefef, #ffe6ff);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            background: #ff6b6b;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+        }
+
+        .login-section {
+            margin: 40px auto;
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-section h2 {
+            margin-bottom: 15px;
+            color: #ff6b6b;
+        }
+
+        .login-section input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-section button {
+            width: 100%;
+            padding: 10px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .login-section button:hover {
+            background: #ff4949;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        .hidden-content {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OFF App - Only Feet Fans</h1>
+        <p>Exclusive feet-themed content powered by $FEET Coin</p>
+    </header>
+
+    <div class="main-content">
+        <h2>Welcome to the OFF App</h2>
+        <p>Your ultimate destination for feet-themed content, NFTs, and exclusive community access.</p>
+
+        <div class="features">
+            <div class="feature-item">
+                <h3>Exclusive Content</h3>
+                <p>Access photos, videos, and NFTs from top creators.</p>
+            </div>
+            <div class="feature-item">
+                <h3>NFT Marketplace</h3>
+                <p>Mint, trade, and collect unique feet-themed NFTs.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Secure Payments</h3>
+                <p>Powered by $FEET Coin for fast, secure, and transparent transactions.</p>
+            </div>
+        </div>
+
+        <section class="login-section">
+            <h2>Login to Access More</h2>
+            <p>Unlock premium features with your OFF account.</p>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <div class="hidden-content" id="premium-content">
+            <h2>Premium Content</h2>
+            <p>Welcome, valued user! Enjoy exclusive content and perks available only to our members.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 OFF App | Powered by $FEET Coin</p>
+    </footer>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username && password) {
+                document.querySelector(".login-section").style.display = "none";
+                document.getElementById("premium-content").style.display = "block";
+            } else {
+                alert("Please enter valid credentials.");
+            }
+        });
+    </script>
+</body>
+</html>
