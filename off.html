@@ -72,6 +72,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
         }
 
         .login-section h2 {
@@ -99,6 +100,40 @@
         }
 
         .login-section button:hover {
+            background: #ff4949;
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .image-section img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .app-download {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .app-download a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .app-download a:hover {
             background: #ff4949;
         }
 
@@ -150,6 +185,14 @@
                 <button type="submit">Login</button>
             </form>
         </section>
+
+        <div class="image-section">
+            <img src="/mnt/data/DALL·E%202025-01-18%2022.04.33%20-%20A%20promotional%20image%20for%20the%20OFF%20(Only%20Feet%20Fans)%20app%20featuring%20a%20beautiful,%20confident%20woman%20in%20a%20stylish%20pose,%20with%20an%20elegant%20and%20slightly%20sensual%20vi.webp" alt="OFF App Promotion">
+            <div class="app-download">
+                <a href="#">Download on App Store</a>
+                <a href="#">Get it on Google Play</a>
+            </div>
+        </div>
 
         <div class="hidden-content" id="premium-content">
             <h2>Premium Content</h2>
